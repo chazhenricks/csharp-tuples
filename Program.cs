@@ -21,7 +21,8 @@ namespace tuples
            transactions.Add(Snacks);
 
            foreach ((string product, double amount, int quantity) t in transactions){
-               Console.WriteLine($"{t.product} {t.amount} {t.quantity}");
+               Console.WriteLine($"Total items sold: {t.quantity}");
+               Console.WriteLine($"Total revenue made: {t.quantity * t.amount}");
            }
 
         }
